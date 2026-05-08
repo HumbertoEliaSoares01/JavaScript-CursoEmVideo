@@ -1,17 +1,31 @@
+.logo{
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    opacity: .8;
+}
 html{
     margin: 0px;
     padding: 0px;
+    background-color: #4E4EFE;
 }
 body{
     margin: 10px;
     padding: 10px;
     text-align: center;
-}
+    background: #fff;
+    border-radius: 10px;
 header{
     border-bottom: 1px solid #000;
 }
 ul{
     list-style: none;
+}
+li{
+    padding: 10px;
+    margin: 10px;
+    background: linear-gradient(to bottom, #a9b7e6 ,  #4E4EFE , #0f0feb);
+    border-radius: 10px;
 }
 iframe{
     padding: 10px;
