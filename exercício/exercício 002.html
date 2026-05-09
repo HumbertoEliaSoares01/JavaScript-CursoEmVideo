@@ -11,6 +11,7 @@
     <p id="paragrafo"></p>
 
     <button 
+        id="botaoClick"
         type="button" 
         onclick=ola()>
         Click Me!
@@ -20,7 +21,8 @@
             document.getElementById("paragrafo").textContent = "JavaScript também pode alterar o CSS";
             document.getElementById("paragrafo").style.color = "red";
             document.getElementById("paragrafo").style.fontSize = "1.2em";
-            document.getElementById("h2").style.color= "green";            
+            document.getElementById("h2").style.color= "green";
+            document.getElementById("botaoClick").style.opacity = "0";            
         }
     </script>
 </body>
