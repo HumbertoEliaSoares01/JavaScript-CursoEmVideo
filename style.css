@@ -7,7 +7,7 @@
     height: 30px;
     padding: 10px 20px;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color:#53050bfd;
     width: 200px;
     border: 0.01px solid #fff;
     border-radius: 5px;
@@ -130,10 +130,7 @@ body{
     margin: 10px;
     padding: 10px;
     text-align: center;
-//    background: linear-gradient(to bottom, #c4c7e2, #4E4EFE);
     border-radius: 10px;
-header{
-//    border-bottom: 1px solid #000;
 }
 hr{
     width: 50%;
