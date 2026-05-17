@@ -35,7 +35,9 @@
     </style>
 </head>
 <body>
-    <h1>Trabalhando com dados v1.0</h1><br>
+    <h1 style="color: red;">
+        Recebendo entrada de dados com &lt;input&gt;
+    </h1><br>
     <input 
         id="inputNome"
         placeholder="Digite seu nome:"
@@ -43,10 +45,12 @@
     <button onclick="dizNome()">Clique para começar</button>
     <script>
         function dizNome() {
-        let inputNome = document.getElementById("inputNome");
-        alert(`Olá, ${inputNome} É um prazer te conhecer!`);
+        const inputNome = document.getElementById("inputNome");
+        let nome = inputNome.value.trim();
+        alert(`Olá, ${nome} É um prazer te conhecer!`);
+        inputNome.value = ""    
     }
-        nome = "";
     </script>
 </body>
 </html>
+
