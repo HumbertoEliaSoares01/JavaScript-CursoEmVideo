@@ -24,7 +24,7 @@
     height: 30px;
     padding: 10px 20px;
     text-align: center;
-    background-color: rgba(253, 30, 0, 0.5);
+    background-color: rgb(155, 26, 9);
     width: 200px;
     border: 0.01px solid #fff;
     border-radius: 5px;
@@ -42,7 +42,7 @@
     height: 30px;
     padding: 10px 20px;
     text-align: center;
-    background-color: #632D31;
+    background-color: #ff8801de;
     width: 200px;
     border: 0.01px solid #fff;
     border-radius: 5px;
@@ -124,7 +124,7 @@ header{
 html{
     margin: 0px;
     padding: 0px;
-    background-color: #4E4EFE;
+    background-color: #2323f898;
 }
 body{
     margin: 10px;
