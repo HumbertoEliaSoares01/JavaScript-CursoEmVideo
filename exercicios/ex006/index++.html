@@ -6,7 +6,12 @@
     <title>Números com JS</title>
     <style>
         body { font: 12pt Arial; text-align: center;}
-        button { font-size: 12pt; padding: 30px; }
+        button { 
+            font-size: 48pt; 
+            padding: 10px;
+            width: 100px;
+            border-radius: 50%;
+        }
         input{
             height: 80px;
             width: 150px;
@@ -17,6 +22,9 @@
         #res{
             font-size: 2em;
         }
+        span{
+            font-size: 2em;
+        }
     </style>
 </head>
 <body>
@@ -24,23 +32,23 @@
     <input type="number" id="inputNumero1">
     <input type="number" id="inputNumero2"><br><br>
     <button onclick="calcular()">
-        Digite dois números e clique
+        +
     </button>
     <section id="res">
-        <p>O resultado vem aqui...</p>
+        <p>Digite dois números e clique no <span> + </span> </p>
     </section>
 
     <script>
             function calcular() {
             const inputNumero1 = document.getElementById("inputNumero1");
             const inputNumero2 = document.getElementById("inputNumero2");
-            let n1 = inputNumero1.value.trim();
-            let n2 = inputNumero2.value.trim();
+            let n1 = Number(inputNumero1.value.trim());
+            let n2 = Number(inputNumero2.value.trim());
+            let soma = n1+n2;
             let res = document.querySelector('section#res')
-            res.innerHTML = `<p>A soma de ${n1} com ${n2} é ${n1+2}!</p>`
+            res.innerHTML = `<p>A soma de ${n1} com ${n2} é ${soma}!</p>`
             res.style.color = "red";
-            inputNumero1.value = ""    
-            inputNumero2.value = ""    
+
         }
     </script>
 </body>
