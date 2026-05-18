@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Números com JS</title>
+    <style>
+        body { font: 12pt Arial; text-align: center;}
+        button { font-size: 12pt; padding: 30px; }
+        input{
+            height: 80px;
+            width: 150px;
+            text-align: center;
+            font-size: 1.5em;
+            margin: auto 5%;
+        }
+        #res{
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com números</h1>
+    <input type="number" id="inputNumero1">
+    <input type="number" id="inputNumero2"><br><br>
+    <button onclick="calcular()">
+        Digite dois números e clique
+    </button>
+    <section id="res">
+        <p>O resultado vem aqui...</p>
+    </section>
+
+    <script>
+            function calcular() {
+            const inputNumero1 = document.getElementById("inputNumero1");
+            const inputNumero2 = document.getElementById("inputNumero2");
+            let n1 = inputNumero1.value.trim();
+            let n2 = inputNumero2.value.trim();
+            let res = document.querySelector('section#res')
+            res.innerHTML = `<p>A soma de ${n1} com ${n2} é ${n1+2}!</p>`
+            res.style.color = "red";
+            inputNumero1.value = ""    
+            inputNumero2.value = ""    
+        }
+    </script>
+</body>
+</html>
