@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            font-size: 1.5em;
+        }
+        button{
+            padding: 3%;
+            font-size: 1em;
+        }
+        button:hover{
+            box-shadow: 0px 0px 30px #000;
+            font-size: 1.2em;
+        }
+        .desafio{
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            padding: 5px;
+            border: 1px solid #000;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+            <a 
+        href="../../desafios/d002/desafio-boas-vindas.pdf"
+        target="_blank"
+        class="desafio"
+        title="desafio 02 pdf">
+        <br>desafio d002 pdf
+    </a>
+    </header>
+    <h1>Boas Vindas</h1>
+    <button onclick="pegaNome()">Inicie o desafio</button>
+</body>
+<script>
+    function pegaNome(){
+        let nome = window.prompt('Qual é o seu nome ?');
+        let idade = Number(window.prompt("Qual é a sua idade?"));
+        window.alert(`${nome}, tem ${idade} anos de idade.`)
+    }
+
+</script>
+</html>
